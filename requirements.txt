@@ -1,0 +1,7 @@
+# PolicyLens dependencies.
+#
+# Intentionally left empty at project initialization. Dependencies will be
+# added incrementally as each ML pipeline stage (preprocessing, embeddings,
+# stance classification, semantic grouping, summarization) is implemented,
+# to keep the environment light and avoid unnecessary installs on
+# constrained hardware (8 GB RAM laptop, CPU-first with optional GPU).

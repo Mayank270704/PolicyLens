@@ -1,0 +1,51 @@
+# Virtual environments
+venv/
+.venv/
+env/
+ENV/
+
+# Python cache
+__pycache__/
+*.py[cod]
+*$py.class
+*.so
+.pytest_cache/
+.mypy_cache/
+
+# Raw and processed datasets
+data/raw/*
+data/processed/*
+!data/raw/.gitkeep
+!data/processed/.gitkeep
+
+# Model checkpoints and weights
+*.bin
+*.pt
+*.pth
+*.ckpt
+*.safetensors
+*.h5
+*.onnx
+
+# Environment secrets
+.env
+.env.local
+
+# Experiment outputs
+outputs/
+runs/
+mlruns/
+wandb/
+*.log
+
+# IDE configuration
+.vscode/
+.idea/
+*.swp
+
+# OS
+.DS_Store
+Thumbs.db
+
+# Jupyter
+.ipynb_checkpoints/
