@@ -31,6 +31,10 @@ data/processed/*
 .env
 .env.local
 
+# Local backend database (SQLite dev default; see backend/app/config.py)
+*.db
+*.sqlite3
+
 # Experiment outputs
 outputs/
 runs/
@@ -49,3 +53,22 @@ Thumbs.db
 
 # Jupyter
 .ipynb_checkpoints/
+
+# PolicyLens annotation data - keep local and private
+data/annotations/**
+!data/annotations/**/
+!data/annotations/**/.gitkeep
+
+# Additional environment secrets
+.env.*
+!.env.example
+
+# Local databases and data exports
+*.sqlite
+*.sqlite3
+*.db
+
+# Local dataset inventory and protected-artifact hashes
+docs/dataset/data_inventory.csv
+docs/dataset/protected_artifacts_baseline.json
+docs/dataset/STANCE_ANNOTATION_EXAMPLES.csv

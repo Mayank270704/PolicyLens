@@ -1,7 +1,25 @@
 # PolicyLens dependencies.
 #
-# Intentionally left empty at project initialization. Dependencies will be
-# added incrementally as each ML pipeline stage (preprocessing, embeddings,
-# stance classification, semantic grouping, summarization) is implemented,
-# to keep the environment light and avoid unnecessary installs on
-# constrained hardware (8 GB RAM laptop, CPU-first with optional GPU).
+# Dependencies are added incrementally as each stage is implemented, to keep
+# the environment light and avoid unnecessary installs on constrained
+# hardware (8 GB RAM laptop, CPU-first with optional GPU). Every package
+# below was already present in the development environment when the
+# backend was built -- none were newly installed for that work; this list
+# documents what's actually in use, it does not request new installs.
+
+# --- Backend (database, API) ---
+fastapi==0.121.0
+uvicorn==0.38.0
+sqlalchemy==2.0.43
+pydantic==2.11.8
+alembic==1.19.1   # installed, available for a future migrations setup; not yet wired in (see docs/backend/DEVELOPER_GUIDE.md)
+httpx==0.28.1     # used by FastAPI's TestClient in tests, not for outbound calls
+pypdf==6.0.0
+beautifulsoup4==4.12.3
+
+# --- ML pipeline stages: preprocessing, embeddings, stance classification,
+#     semantic grouping, summarization --- not yet pinned here; see
+#     docs/experiments/STANCE_CLASSIFICATION_EXPERIMENT_PLAN.md and
+#     SEMANTIC_GROUPING_EXPERIMENT_PLAN.md for the planned (already-installed)
+#     packages -- scikit-learn, sentence-transformers, torch, transformers,
+#     umap-learn, hdbscan -- to be pinned here once an experiment actually runs.

@@ -11,7 +11,7 @@ Given thousands to hundreds of thousands of public comments on a policy
 document, PolicyLens aims to:
 
 1. Classify each comment into one of four stance categories: **Support**,
-   **Oppose**, **Neutral**, or **Mixed**.
+   **Oppose**, **Neutral**, or **Unclear**.
 2. Group semantically similar comments that express the same underlying
    concern or idea.
 3. Generate a representative summary for each group.
