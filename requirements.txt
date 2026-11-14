@@ -23,3 +23,9 @@ beautifulsoup4==4.12.3
 #     SEMANTIC_GROUPING_EXPERIMENT_PLAN.md for the planned (already-installed)
 #     packages -- scikit-learn, sentence-transformers, torch, transformers,
 #     umap-learn, hdbscan -- to be pinned here once an experiment actually runs.
+
+# --- Stance classification, Experiment 1 (TF-IDF + Logistic Regression) ---
+# Pinned to the versions the saved models/stance/ artifacts were produced with.
+scikit-learn==1.9.0
+numpy==2.5.3
+joblib==1.5.3

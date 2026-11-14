@@ -1,0 +1,30 @@
+{
+  "config_version": "indian_stance_baseline_v1",
+  "seed": 20261114,
+  "split": {
+    "test_fraction": 0.15,
+    "val_fraction": 0.15,
+    "use_locked_test_column": true,
+    "near_duplicate_jaccard": 0.8
+  },
+  "min_per_class_train": 5,
+  "refit_on_train_plus_val": false,
+  "selection_metric": "validation macro-F1 (ties keep the earlier, simpler configuration)",
+  "models": [
+    {
+      "name": "tfidf_word_logreg",
+      "features": "word",
+      "word_ngram_range": [1, 2],
+      "classifier": {"type": "logreg"},
+      "grid": {"C": [0.3, 1.0, 3.0, 10.0], "min_df": [1, 2], "class_weight": [null, "balanced"]}
+    },
+    {
+      "name": "tfidf_wordchar_linearsvc",
+      "features": "word_char",
+      "word_ngram_range": [1, 2],
+      "char_ngram_range": [2, 5],
+      "classifier": {"type": "linearsvc"},
+      "grid": {"C": [0.1, 0.3, 1.0, 3.0], "min_df": [1, 2], "class_weight": [null, "balanced"]}
+    }
+  ]
+}

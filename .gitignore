@@ -26,6 +26,9 @@ data/processed/*
 *.safetensors
 *.h5
 *.onnx
+# Trained stance models embed vocabulary/examples from private annotation data
+models/stance/*
+!models/stance/.gitkeep
 
 # Environment secrets
 .env

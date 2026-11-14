@@ -1,0 +1,39 @@
+{
+  "_comment": "MyGov rights decision for the 2016 'Government Open Data Use License - India' consultation comments, transcribed from the researcher-supplied text of MyGov's reply. No metadata has been invented: fields the researcher did not supply are marked NOT_SUPPLIED. decision_date is NOT_SUPPLIED, so materialize_text.py will refuse this record until the actual email date is entered from the original email. Institutional ethics is a SEPARATE decision and is still pending.",
+  "decision_type": "rights_permission",
+  "status": "CLEARED",
+  "status_note": "Conditional: no objection to use for non-commercial academic research, subject to the listed conditions.",
+  "source": "mygov",
+  "decision_text_excerpt": "Based on the details you've shared, we have no objection to their use for non-commercial academic research, subject to the following conditions.",
+  "scope_as_described_to_mygov": "PolicyLens non-commercial academic research on the 2016 MyGov consultation comments, including internal blinded annotation, anonymised labels, and research/ML experiments.",
+  "permitted_activities": [
+    "internal_processing",
+    "internal_annotation",
+    "anonymised_labels",
+    "internal_modelling",
+    "aggregate_publication"
+  ],
+  "conditions": [
+    "Removal of names, usernames, email IDs and other identifiers before annotation.",
+    "Aggregate-only publication; no verbatim or identifiable comments.",
+    "MyGov/NIC attribution.",
+    "No implication of government endorsement.",
+    "No third-party sharing of raw or re-identifiable data.",
+    "Sending MyGov a copy of the resulting paper/report.",
+    "Prior written approval for any scope change."
+  ],
+  "conditions_provenance": "Conditions as supplied by the researcher in the 2026-11-14 session; wording preserved exactly as supplied.",
+  "full_identifier_review_required": true,
+  "decided_by": "MyGov (sender name and office NOT_SUPPLIED)",
+  "decision_date": "NOT_SUPPLIED",
+  "evidence_reference": "Researcher-supplied text of MyGov's reply email, quoted in the PolicyLens session of 2026-11-14. Original email not stored in the workspace.",
+  "metadata_not_supplied": [
+    "sender name",
+    "sender office/designation",
+    "sender email address",
+    "email date",
+    "reference or ticket number",
+    "original email file"
+  ],
+  "recorded": "2026-11-14 (transcription of researcher-supplied text)"
+}

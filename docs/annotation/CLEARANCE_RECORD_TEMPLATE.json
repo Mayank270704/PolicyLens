@@ -1,0 +1,11 @@
+{
+  "_comment": "Template only; materialize_text.py refuses it as-is. Two SEPARATE completed records are required before any text is shown to annotators: (1) decision_type 'rights_permission', recorded from the written reply of the data provider / rights holder (for MyGov: MyGov/MeitY/NIC); (2) decision_type 'ethics_approval' or 'ethics_exemption', recorded from the institution's written ethics decision. Each is completed only by transcribing a real written decision, is stored outside git, and must cite that document in evidence_reference. See docs/annotation/MYGOV_PERMISSION_REQUEST.md and docs/annotation/ETHICS_REVIEW_CHECKLIST.md.",
+  "decision_type": "rights_permission | ethics_approval | ethics_exemption",
+  "status": "NOT_CLEARED",
+  "source": "mygov | tweets",
+  "permitted_activities": [],
+  "decided_by": "",
+  "decision_date": "",
+  "evidence_reference": "",
+  "conditions": ""
+}
